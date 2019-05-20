@@ -1,0 +1,107 @@
+﻿/*////////////////////////////////////////////////////////////////
+//                    CSS by Mehdi Naseri                       //
+////////////////////////////////////////////////////////////////*/
+
+body {
+    /*font-size: 13px;*/
+    /*background-image: url("../../Content/Meh/Images/Background.png");*/
+    font-family: Tahoma;
+}
+
+/*////////////////////////////////////////////////////////////////
+//                  اضافه کردن سایه
+////////////////////////////////////////////////////////////////*/
+
+.jumbotron { box-shadow: -8px 10px 9px 4px rgba(0, 0, 0, 0.7); }
+
+.panel {
+    border-radius: 8px;
+    box-shadow: -8px 10px 9px 4px rgba(0, 0, 0, 0.7);
+}
+
+.panel .panel {
+    border-radius: 8px;
+    box-shadow: -2px 2px 2px 1px rgb(128, 128, 128);
+}
+
+.panel .dl-horizontal { border-radius: 6px; }
+
+.panel .panel {
+    background-image: url("../../Content/Meh/Images/Background2.png");
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+
+
+/*////////////////////////////////////////////////////////////////
+//                    //نازکتر کردن سمت چپ منو شامل ثبت نام و ورود 
+////////////////////////////////////////////////////////////////*/
+
+.navbar-right a { font-size: smaller; }
+
+
+/*////////////////////////////////////////////////////////////////
+//                 جهت تغيير رنگ منوهاي بالا                  //
+////////////////////////////////////////////////////////////////*/
+
+.navbar-inverse {
+    /*background-color: rgb(33, 35, 76);*/
+    /*کمی روشنتر*/
+    background-color: rgb(44, 47, 116);
+}
+
+.navbar .navbar-nav > li > a:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.navbar .dropdown-menu > li > a,
+.navbar .dropdown-menu {
+    background-color: rgb(53, 56, 118);
+    color: #C8C8C8;
+}
+
+.navbar .dropdown-menu > li > a:hover {
+    background-color: black;
+    color: #fff;
+}
+
+
+/*////////////////////////////////////////////////////////////////
+//           تغيير نمایش تمام صفحه عکسها                      //
+////////////////////////////////////////////////////////////////*/
+
+/*@media (min-width: 768px){ 
+    .container {
+    max-width: none;
+   }
+    
+}
+.container {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}*/
+
+.container {
+    /* padding-right: 15px; */
+    /* padding-left: 15px; */
+    /*margin-right: auto;
+    margin-left: auto;*/
+}
+
+.CertificateImage>img {
+    height: 80%;
+    /*max-height: 650px;*/
+    width: auto;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    
+    <link href="~/Content/Mehdi/Meh.css" rel="stylesheet" />
+
+    @Scripts.Render("~/bundles/modernizr")
+    
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Naseri", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#MCSD-AppBuilder" class="dropdown-toggle" data-toggle="dropdown">Microsoft<span class="caret"></span> </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#MCSD-AppBuilder">MCSD(Microsoft Certified Software Deveoloper)</a></li>
+                            <li><a href="#MCSD-Webdeveloper">MCSD(Microsoft Certified Software Deveoloper)</a></li>
+                            <li><a href="#MCSA">MCSA(Microsoft Certified Software Associate)</a></li>
+                            <li><a href="#MCP">MCP(Microsoft Certified Professional)</a></li>
+                            <li><a href="#MS">MS(Microsoft Specialist)</a></li>
+                            <li><a href="#MTA">MTA(Microsoft Technology Associate)</a></li>
+                            <li class="nav-divider"></li>
+                            <li><a href="#MicrosoftVerification">Microsoft Certificatated Verification</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#MCSD-AppBuilder" class="dropdown-toggle" data-toggle="dropdown">PMI<span class="caret"></span> </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#MCSD-AppBuilder">MCSD(Microsoft Certified Software Deveoloper)</a></li>
+                            <li><a href="#MCSD-Webdeveloper">MCSD(Microsoft Certified Software Deveoloper)</a></li>
+                            <li><a href="#MCSA">MCSA(Microsoft Certified Software Associate)</a></li>
+                            <li><a href="#MCP">MCP(Microsoft Certified Professional)</a></li>
+                            <li><a href="#MS">MS(Microsoft Specialist)</a></li>
+                            <li><a href="#MTA">MTA(Microsoft Technology Associate)</a></li>
+                            <li class="nav-divider"></li>
+                            <li><a href="#PmiVerification">PMI Certificatation Verification</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#MCSD-AppBuilder" class="dropdown-toggle" data-toggle="dropdown">CIWcertified<span class="caret"></span> </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#MCSD-AppBuilder">MCSD(Microsoft Certified Software Deveoloper)</a></li>
+                            <li><a href="#MCSD-Webdeveloper">MCSD(Microsoft Certified Software Deveoloper)</a></li>
+                            <li class="nav-divider"></li>
+                            <li><a href="#CiwVerification">CIW Certificatation Verification</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#PSM" class="dropdown-toggle" data-toggle="dropdown">Scrum.org<span class="caret"></span> </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#PSM">PSM (Professional Scrum Master)</a></li>
+                            <li><a href="#PSPO">PSPO (Professional Scrum Product Owner)</a></li>
+                            <li class="nav-divider"></li>
+                            <li><a href="#Scrum.orgVerification">Scrum.org Certificatation Verification</a></li>
+                        </ul>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content " >
+        @RenderBody()
+        <hr />
+        <footer>
+            <p class="text-center">&copy; @DateTime.Now.Year - Mehdi Naseri</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Scripts/Meh/MehJavaScript.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
